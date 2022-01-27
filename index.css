@@ -1,0 +1,149 @@
+body {
+  background-image: url("/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  font-family: Geneva, Arial, sans-serif !important;
+}
+
+header {
+ 
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  display: flex;
+}
+
+/* footer {
+  
+} */
+
+h2 {
+  color: #1d3557;
+  font-weight: normal;
+  margin-left: 1rem;
+  padding-top: 0.8rem;
+}
+
+h2 b:nth-child(1) {
+  color: #1d3557;
+}
+h2 b:nth-child(2) {
+  color: #1d3557;
+}
+h2 b:nth-child(3) {
+  color: #e63946;
+}
+
+.card {
+  display: flex;
+  text-align: center;
+  border-radius: 17px;
+  border: none;
+  background-color: #a8dadc;
+}
+
+.card-body {
+  background-color: #a8dadc;
+  border-radius: 17px;
+}
+
+.card-text {
+  display: flex;
+  text-align: center;
+  color: #1d3557;
+  font-weight: bolder;
+}
+
+.btn-primary,
+.btn {
+  display: flex;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #1d3557;
+  color: #a8dadc;
+  border-radius: 17px;
+  border-color: #1d3557;
+}
+
+.btn:hover {
+  background-color: #457b9d;
+  color: #f1faee;
+  transition: 0.5s;
+}
+
+.btn:active {
+  background-color: #1d3557;
+  border-color: #1d3557;
+}
+
+.btn-primary:focus {
+  background-color: #1d3557;
+  color: #457b9d;
+  border-color: #1d3557;
+}
+
+.card-img-top {
+  border-radius: 17px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative;
+    background-color: #f1faee;
+  }
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    background-color: #f1faee;
+  }
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+    color: #a8dadc;
+  }
+  .dropdown-menu > li:hover {
+    background-color: #a8dadc;
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+}
+
+.dropdown-menu {
+  background-color: #f1faee;
+}
+
+.dropdown-item:hover {
+  background-color: #457b9d;
+}
+
+#category-name {
+  font-family: Geneva, Arial, sans-serif;
+  color: #1d3557;
+}
+
+.dropdown-item {
+  color: #1d3557;
+}
+
+.navbartogglericon{
+  color: #1d3557;
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+}
+/* ============ small devices .end// ============ */
