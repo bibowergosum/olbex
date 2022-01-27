@@ -4,7 +4,7 @@ body {
   color: var(--strTextColor);
   font-size: var(--strFontSize);
   margin-bottom: 1rem;
-  min-height: 1320px;
+  min-height: 600px;
 }
 
 header {
@@ -86,14 +86,14 @@ button {
   display: inline;
 }
 
-#titlelink{
+#titlelink {
   text-decoration: none;
 }
 
 .ExerciseTitle {
   font-size: 140%;
   color: #a8dadc;
-  font-family:  Geneva, Arial, sans-serif;
+  font-family: Geneva, Arial, sans-serif;
 }
 
 .ExerciseSubtitle {
@@ -162,8 +162,8 @@ button p.RTLText {
   font-family: var(--strFontFace);
 }
 
-.GapBox{
-    height: 1.2rem;
+.GapBox {
+  height: 1.2rem;
 }
 
 .Guess {
@@ -192,6 +192,15 @@ span#TimerText {
 }
 
 span.Instructions {
+}
+
+.answerbox{
+  display: inline-block
+}
+
+#Instructions {
+  font-weight: bolder;
+  font-size: 0.9rem;
 }
 
 div.ExerciseText {
