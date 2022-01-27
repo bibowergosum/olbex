@@ -64,6 +64,10 @@ p{
 	font-size: 1em;
 }
 
+#titlelink{
+  text-decoration: none;
+}
+
 #Instructions {
   font-weight: bolder;
   font-size: 0.9rem;

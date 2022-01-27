@@ -96,6 +96,10 @@ button {
   color: #a8dadc;
 }
 
+#titlelink{
+  text-decoration: none;
+}
+
 .ExerciseSubtitle {
   font-size: 120%;
   color: #a8dadc;

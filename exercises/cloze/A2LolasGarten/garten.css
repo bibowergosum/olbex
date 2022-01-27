@@ -89,6 +89,10 @@ button {
   display: inline;
 }
 
+#titlelink{
+  text-decoration: none;
+}
+
 .ExerciseTitle {
   font-size: 140%;
   color: #a8dadc;
