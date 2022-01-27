@@ -348,6 +348,11 @@ div.ClozeBody{
 
 span.GapSpan{
 	font-weight: bold;
+	
+}
+
+.answerbox{
+	display: inline-block;
 }
 
 /* JCross styles */

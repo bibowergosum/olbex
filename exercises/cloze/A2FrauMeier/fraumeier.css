@@ -1,9 +1,10 @@
 body {
   background-color: #1d3557;
-  font-family: Geneva, Arial, sans-serif !important;
+  font-family: Geneva, Arial, sans-serif;
   color: var(--strTextColor);
   font-size: var(--strFontSize);
   margin-bottom: 1rem;
+  
 }
 
 header {
@@ -52,7 +53,6 @@ body {
   color: var(--strTextColor);
   font-size: var(--strFontSize);
   margin-bottom: 1rem;
-  min-height: 550px;
 }
 
 .content {
@@ -66,16 +66,11 @@ p {
   font-size: 1em;
 }
 
-#Instructions {
-  font-weight: bolder;
-  font-size: 0.9rem;
-}
-
 table,
 div,
 span,
 td {
-  font-size: 0.9rem;
+  font-size: 1em;
   color: var(--strTextColor);
 }
 
@@ -308,6 +303,7 @@ div.JMatchDrag {
   padding: 0;
   background-color: var(--strPageBGColor);
   border-style: none;
+  font-weight: bolder;
 }
 
 div#GuessDiv {
@@ -555,7 +551,6 @@ div.ShortAnswer {
   border-radius: 0.5em;
   padding: 0.5em;
   min-width: 3em;
-
   border-left-color: var(--strFuncLightColor);
   border-top-color: var(--strFuncLightColor);
   border-right-color: var(--strFuncShadeColor);
@@ -600,15 +595,21 @@ div.NavButtonBar {
   border-width: 1pt;
   cursor: pointer;
   box-shadow: 0.2em 0.3em 0.2em var(--strNavShadeColor);
+    color: #a8dadc;
+  border-color: #1d3557;
+  border-radius: 17px;
 }
 
 .NavButton:active {
-  box-shadow: none;
+   background-color: #1d3557;
+  border-color: #1d3557;
 }
 
 .NavButton:hover {
-  color: var(--strNavBarColor);
-  background-color: var(--strNavTextColor);
+  background-color: #457b9d;
+  color: #f1faee;
+  transition: 0.5s;
+  border-color: #457b9d;
 }
 
 /*EndNavBarStyle*/
@@ -654,6 +655,16 @@ div.CardStyleCentered {
   text-align: right;
   font-size: 140%;
 }
+
+#Instructions {
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
 
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {

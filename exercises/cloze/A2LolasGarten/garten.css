@@ -1,6 +1,10 @@
 body {
   background-color: #1d3557;
-  font-family: Geneva, Arial, sans-serif !important;
+  font-family: Geneva, Arial, sans-serif;
+  color: var(--strTextColor);
+  font-size: var(--strFontSize);
+  margin-bottom: 1rem;
+  min-height: 1320px;
 }
 
 header {
@@ -47,10 +51,8 @@ body {
   font-family: var(--strFontFace);
   background-color: #1d3557;
   color: var(--strTextColor);
-
   font-size: var(--strFontSize);
   margin-bottom: 1rem;
-  min-height: 750px;
 }
 
 .content {
@@ -64,16 +66,11 @@ p {
   font-size: 1em;
 }
 
-#Instructions {
-  font-weight: bolder;
-  font-size: 0.9rem;
-}
-
 table,
 div,
 span,
 td {
-  font-size: 0.9rem;
+  font-size: 1em;
   color: var(--strTextColor);
 }
 
