@@ -1,6 +1,67 @@
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative;
+    background-color: #f1faee;
+  }
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    background-color: #f1faee;
+  }
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+    color: #a8dadc;
+  }
+  .dropdown-menu > li:hover {
+    background-color: #a8dadc;
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+}
+
+.dropdown-menu {
+  background-color: #f1faee;
+}
+
+.dropdown-item:hover {
+  background-color: #457b9d;
+  color: #f1faee;
+}
+
+#category-name {
+  font-family: Geneva, Arial, sans-serif;
+  color: #1d3557;
+}
+
+.dropdown-item {
+  color: #1d3557;
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+}
+/* ============ small devices .end// ============ */
+
+
 body {
   background-color: #1d3557;
-  font-family: Geneva, Arial, sans-serif !important;
+  font-family: Geneva, Arial, sans-serif;
+  color: var(--strTextColor);
+  font-size: var(--strFontSize);
+  margin-bottom: 1rem;
+  min-height: 600px;
 }
 
 header {
@@ -47,10 +108,8 @@ body {
   font-family: var(--strFontFace);
   background-color: #1d3557;
   color: var(--strTextColor);
-
   font-size: var(--strFontSize);
   margin-bottom: 1rem;
-  min-height: 750px;
 }
 
 .content {
@@ -84,18 +143,19 @@ button {
   display: inline;
 }
 
-#titlelink{
+#titlelink {
   text-decoration: none;
 }
 
 .ExerciseTitle {
   font-size: 140%;
-  color: var(--strTitleColor);
+  color: #a8dadc;
+  font-family: Geneva, Arial, sans-serif;
 }
 
 .ExerciseSubtitle {
   font-size: 120%;
-  color: var(--strTitleColor);
+  color: #a8dadc;
 }
 
 div.StdDiv,
@@ -156,7 +216,11 @@ button p.RTLText {
   text-align: right;
   font-size: 150%;
   direction: rtl;
-  font-family: "Times New Roman", var(--strFontFace);
+  font-family: var(--strFontFace);
+}
+
+.GapBox {
+  height: 1.2rem;
 }
 
 .Guess {
@@ -185,6 +249,15 @@ span#TimerText {
 }
 
 span.Instructions {
+}
+
+.answerbox{
+  display: inline-block
+}
+
+#Instructions {
+  font-weight: bolder;
+  font-size: 0.9rem;
 }
 
 div.ExerciseText {
@@ -236,7 +309,7 @@ div.Feedback {
   color: var(--strTitleColor);
   position: absolute;
   display: none;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 div.ExerciseDiv {
@@ -296,7 +369,6 @@ div.JMatchDrag {
   padding: 0;
   background-color: var(--strPageBGColor);
   border-style: none;
-  font-weight: bolder;
 }
 
 div#GuessDiv {
@@ -330,7 +402,7 @@ div.DropLine {
   text-align: left;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #1d3557;
+  border-bottom-color: var(--strTitleColor);
   width: 80%;
   left: 10%;
 }
@@ -373,22 +445,22 @@ table.CrosswordGrid tbody tr td {
   border-style: solid;
   border-width: 1px;
   border-color: #000000;
-  color: #000000;
+  color: #1d3557;
 }
 
 table.CrosswordGrid span {
-  color: #000000;
+  color: #1d3557;
 }
 
 table.CrosswordGrid td.BlankCell {
-  background-color: #000000;
+  background-color: #1d3557;
   color: #000000;
 }
 
 table.CrosswordGrid td.LetterOnlyCell {
   text-align: center;
   vertical-align: middle;
-  background-color: #ffffff;
+  background-color: #f1faee;
   color: #000000;
   font-weight: bold;
 }
@@ -396,7 +468,7 @@ table.CrosswordGrid td.LetterOnlyCell {
 table.CrosswordGrid td.NumLetterCell {
   text-align: left;
   vertical-align: top;
-  background-color: #ffffff;
+  background-color: #a8dadc;
   color: #000000;
   padding: 1px;
   font-weight: bold;
@@ -540,7 +612,7 @@ div.ShortAnswer {
 }
 
 .FuncButton {
-  border-style: none;
+border-style: none;
   border-radius: 0.5em;
   padding: 0.5em;
   min-width: 3em;
@@ -559,6 +631,7 @@ div.ShortAnswer {
 
 .FuncButton:active {
   box-shadow: none;
+  border: none;
 }
 
 .FuncButton:hover {
@@ -580,29 +653,23 @@ div.NavButtonBar {
 }
 
 .NavButton {
-  border-style: none;
+  border-style: solid;
   border-radius: 0.5em;
   padding: 0.5em;
   min-width: 3em;
-  background-color: #1d3557;
+
   border-width: 1pt;
   cursor: pointer;
-  box-shadow: 0.2em 0.3em 0.2em var;
-  color: #a8dadc;
-  border-color: #1d3557;
-  border-radius: 17px;
+  box-shadow: 0.2em 0.3em 0.2em var(--strNavShadeColor);
 }
 
 .NavButton:active {
-  background-color: #1d3557;
-  border-color: #1d3557;
+  box-shadow: none;
 }
 
 .NavButton:hover {
-  background-color: #457b9d;
-  color: #f1faee;
-  transition: 0.5s;
-  border-color: #457b9d;
+  color: var(--strNavBarColor);
+  background-color: var(--strNavTextColor);
 }
 
 /*EndNavBarStyle*/
@@ -612,108 +679,39 @@ a {
   font-size: 1rem;
 }
 
-a:visited {
-  color: var(--strVLinkColor);
+a:visited{
+	color: var(--strVLinkColor);
 }
 
-a:hover {
-  color: var(--strLinkColor);
+a:hover{
+	color: var(--strLinkColor);
 }
 
 div.CardStyle {
-  position: absolute;
-  font-family: var(--strFontFace);
-  font-size: 1em;
-  border-style: solid;
-  border-radius: 0.5em;
-  padding: 0.5em;
-  min-width: 2em;
-  border-width: 1pt;
-  color: var(--strTextColor);
-  box-shadow: 0.2em 0.3em 0.2em var(--strTextColor);
-  background-color: var(--strExBGColor);
-  left: -50px;
-  top: -50px;
-  overflow: visible;
-  touch-action: none;
-  user-select: none;
-  box-sizing: border-box;
+	position: absolute;
+	font-family: var(--strFontFace);
+	font-size: 1em;
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 2em;
+	border-width: 1pt;
+	color: var(--strTextColor);
+	box-shadow: 0.2em 0.3em 0.2em var(--strTextColor);
+	background-color: var(--strExBGColor);
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+	touch-action: none;
+	user-select: none;
+	box-sizing: border-box;
 }
 
-div.CardStyleCentered {
-  text-align: center;
+div.CardStyleCentered{
+	text-align: center;
 }
 
-.rtl {
-  text-align: right;
-  font-size: 140%;
+.rtl{
+	text-align: right;
+	font-size: 140%;
 }
-
-#Instructions {
-  font-weight: bolder;
-  font-size: 0.9rem;
-}
-
-img {
-  width: 9rem;
-  border-radius: 17px;
-}
-
-.navbartogglericon {
-  color: #1d3557;
-}
-/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-  .dropdown-menu li {
-    position: relative;
-    background-color: #f1faee;
-  }
-  .nav-item .submenu {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: -7px;
-    background-color: #f1faee;
-  }
-  .nav-item .submenu-left {
-    right: 100%;
-    left: auto;
-    color: #a8dadc;
-  }
-  .dropdown-menu > li:hover {
-    background-color: #a8dadc;
-  }
-  .dropdown-menu > li:hover > .submenu {
-    display: block;
-  }
-}
-
-.dropdown-menu {
-  background-color: #f1faee;
-}
-
-.dropdown-item:hover {
-  background-color: #457b9d;
-  color: #f1faee;
-}
-
-#category-name {
-  font-family: Geneva, Arial, sans-serif;
-  color: #1d3557;
-}
-
-.dropdown-item {
-  color: #1d3557;
-}
-
-/* ============ desktop view .end// ============ */
-
-/* ============ small devices ============ */
-@media (max-width: 991px) {
-  .dropdown-menu .dropdown-menu {
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
-    margin-bottom: 0.5rem;
-  }
-}
-/* ============ small devices .end// ============ */

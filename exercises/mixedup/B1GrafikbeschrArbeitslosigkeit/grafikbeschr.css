@@ -4,7 +4,7 @@ body {
   color: var(--strTextColor);
   font-size: var(--strFontSize);
   margin-bottom: 1rem;
-  min-height: 1320px;
+  min-height: 1380px;
 }
 
 header {
@@ -86,7 +86,7 @@ button {
   display: inline;
 }
 
-#titlelink{
+#titlelink {
   text-decoration: none;
 }
 
@@ -728,6 +728,7 @@ title {
 
 .dropdown-item:hover {
   background-color: #457b9d;
+  color: #f1faee;
 }
 
 #category-name {

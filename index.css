@@ -4,6 +4,7 @@ body {
   background-size: cover;
   background-position: fixed;
   font-family: Geneva, Arial, sans-serif !important;
+  
 }
 
 header {
@@ -125,6 +126,7 @@ h2 b:nth-child(3) {
 
 .dropdown-item:hover {
   background-color: #457b9d;
+  color: #f1faee;
 }
 
 #category-name {

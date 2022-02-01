@@ -1,6 +1,10 @@
 body {
   background-color: #1d3557;
-  font-family: Geneva, Arial, sans-serif !important;
+  font-family: Geneva, Arial, sans-serif;
+  color: var(--strTextColor);
+  font-size: var(--strFontSize);
+  margin-bottom: 1rem;
+  min-height: 600px;
 }
 
 header {
@@ -47,10 +51,8 @@ body {
   font-family: var(--strFontFace);
   background-color: #1d3557;
   color: var(--strTextColor);
-
   font-size: var(--strFontSize);
   margin-bottom: 1rem;
-  min-height: 750px;
 }
 
 .content {
@@ -84,19 +86,88 @@ button {
   display: inline;
 }
 
-#titlelink{
-  text-decoration: none;
-}
-
 .ExerciseTitle {
   font-size: 140%;
-  color: var(--strTitleColor);
+  color: #a8dadc;
+  font-family: Geneva, Arial, sans-serif;
 }
 
 .ExerciseSubtitle {
   font-size: 120%;
-  color: var(--strTitleColor);
+  color: #a8dadc;
 }
+
+#Instructions {
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+#titlelink{
+    text-decoration: none;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative;
+    background-color: #f1faee;
+  }
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    background-color: #f1faee;
+  }
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+    color: #a8dadc;
+  }
+  .dropdown-menu > li:hover {
+    background-color: #a8dadc;
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+}
+
+.dropdown-menu {
+  background-color: #f1faee;
+}
+
+.dropdown-item:hover {
+  background-color: #457b9d;
+  color: #f1faee;
+}
+
+#category-name {
+  font-family: Geneva, Arial, sans-serif;
+  color: #1d3557;
+}
+
+.dropdown-item {
+  color: #1d3557;
+}
+
+#exercisetable{
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+}
+/* ============ small devices .end// ============ */
+
 
 div.StdDiv,
 div.ExerciseContainer,
@@ -236,7 +307,7 @@ div.Feedback {
   color: var(--strTitleColor);
   position: absolute;
   display: none;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 div.ExerciseDiv {
@@ -296,7 +367,6 @@ div.JMatchDrag {
   padding: 0;
   background-color: var(--strPageBGColor);
   border-style: none;
-  font-weight: bolder;
 }
 
 div#GuessDiv {
@@ -330,7 +400,7 @@ div.DropLine {
   text-align: left;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #1d3557;
+  border-bottom-color: var(--strTitleColor);
   width: 80%;
   left: 10%;
 }
@@ -559,6 +629,7 @@ div.ShortAnswer {
 
 .FuncButton:active {
   box-shadow: none;
+  border: none;
 }
 
 .FuncButton:hover {
@@ -580,29 +651,23 @@ div.NavButtonBar {
 }
 
 .NavButton {
-  border-style: none;
+  border-style: solid;
   border-radius: 0.5em;
   padding: 0.5em;
   min-width: 3em;
-  background-color: #1d3557;
+
   border-width: 1pt;
   cursor: pointer;
-  box-shadow: 0.2em 0.3em 0.2em var;
-  color: #a8dadc;
-  border-color: #1d3557;
-  border-radius: 17px;
+  box-shadow: 0.2em 0.3em 0.2em var(--strNavShadeColor);
 }
 
 .NavButton:active {
-  background-color: #1d3557;
-  border-color: #1d3557;
+  box-shadow: none;
 }
 
 .NavButton:hover {
-  background-color: #457b9d;
-  color: #f1faee;
-  transition: 0.5s;
-  border-color: #457b9d;
+  color: var(--strNavBarColor);
+  background-color: var(--strNavTextColor);
 }
 
 /*EndNavBarStyle*/
@@ -648,72 +713,3 @@ div.CardStyleCentered {
   text-align: right;
   font-size: 140%;
 }
-
-#Instructions {
-  font-weight: bolder;
-  font-size: 0.9rem;
-}
-
-img {
-  width: 9rem;
-  border-radius: 17px;
-}
-
-.navbartogglericon {
-  color: #1d3557;
-}
-/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-  .dropdown-menu li {
-    position: relative;
-    background-color: #f1faee;
-  }
-  .nav-item .submenu {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: -7px;
-    background-color: #f1faee;
-  }
-  .nav-item .submenu-left {
-    right: 100%;
-    left: auto;
-    color: #a8dadc;
-  }
-  .dropdown-menu > li:hover {
-    background-color: #a8dadc;
-  }
-  .dropdown-menu > li:hover > .submenu {
-    display: block;
-  }
-}
-
-.dropdown-menu {
-  background-color: #f1faee;
-}
-
-.dropdown-item:hover {
-  background-color: #457b9d;
-  color: #f1faee;
-}
-
-#category-name {
-  font-family: Geneva, Arial, sans-serif;
-  color: #1d3557;
-}
-
-.dropdown-item {
-  color: #1d3557;
-}
-
-/* ============ desktop view .end// ============ */
-
-/* ============ small devices ============ */
-@media (max-width: 991px) {
-  .dropdown-menu .dropdown-menu {
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
-    margin-bottom: 0.5rem;
-  }
-}
-/* ============ small devices .end// ============ */

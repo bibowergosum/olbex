@@ -698,6 +698,7 @@ p {
 
 .dropdown-item:hover {
   background-color: #457b9d;
+  color: #f1faee;
 }
 
 #category-name {
