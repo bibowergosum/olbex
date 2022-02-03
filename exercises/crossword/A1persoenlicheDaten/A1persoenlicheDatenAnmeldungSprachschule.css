@@ -1,0 +1,725 @@
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative;
+    background-color: #f1faee;
+  }
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    background-color: #f1faee;
+  }
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+    color: #a8dadc;
+  }
+  .dropdown-menu > li:hover {
+    background-color: #a8dadc;
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+}
+
+.dropdown-menu {
+  background-color: #f1faee;
+}
+
+.dropdown-item:hover {
+  background-color: #457b9d;
+  color: #f1faee;
+}
+
+#category-name {
+  font-family: Geneva, Arial, sans-serif;
+  color: #1d3557;
+}
+
+.dropdown-item {
+  color: #1d3557;
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+}
+/* ============ small devices .end// ============ */
+
+
+body {
+  background-color: #1d3557;
+  font-family: Geneva, Arial, sans-serif;
+  color: var(--strTextColor);
+  font-size: var(--strFontSize);
+  margin-bottom: 1rem;
+  min-height: 600px;
+}
+
+header {
+  background-color: #a8dadc;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  margin: 0;
+  display: flex;
+}
+
+h2 {
+  color: #1d3557;
+  font-weight: normal;
+  margin-left: 1rem;
+  padding-top: 0.8rem;
+}
+
+h2 b:nth-child(1) {
+  color: #1d3557;
+}
+h2 b:nth-child(2) {
+  color: #1d3557;
+}
+h2 b:nth-child(3) {
+  color: #e63946;
+}
+
+:root {
+  --strFontFace: Geneva, Arial, sans-serif;
+  --strFontSize: small;
+  --strTextColor: #1d3557;
+  --strTitleColor: #1d3557;
+
+  --strFuncLightColor: #f8fcf6;
+  --strFuncShadeColor: #787d77;
+  --strLinkColor: #0000ff;
+  --strVLinkColor: #1d3557;
+
+  --strPageBGColor: #a8dadc;
+  --strExBGColor: #f1faee;
+}
+
+body {
+  font-family: var(--strFontFace);
+  background-color: #1d3557;
+  color: var(--strTextColor);
+  font-size: var(--strFontSize);
+  margin-bottom: 1rem;
+}
+
+.content {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+p {
+  text-align: left;
+  margin: 0px;
+  font-size: 1em;
+}
+
+table,
+div,
+span,
+td {
+  font-size: 1em;
+  color: var(--strTextColor);
+}
+
+div.Titles {
+  padding: 0.5em;
+  text-align: center;
+  color: var(--strTitleColor);
+}
+
+button {
+  font-family: var(--strFontFace);
+  font-size: 1em;
+  display: inline;
+}
+
+#titlelink {
+  text-decoration: none;
+}
+
+.ExerciseTitle {
+  font-size: 140%;
+  color: #a8dadc;
+  font-family: Geneva, Arial, sans-serif;
+}
+
+.ExerciseSubtitle {
+  font-size: 120%;
+  color: #a8dadc;
+}
+
+div.StdDiv,
+div.ExerciseContainer,
+div.ReadingContainer {
+  background-color: var(--strExBGColor);
+  text-align: center;
+  font-size: 1em;
+  color: var(--strTextColor);
+  padding: 0.5em;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--strTextColor);
+  margin-bottom: 1px;
+}
+
+div.ReadingContainer,
+div.ExerciseContainer {
+  min-width: 15em;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 1px;
+}
+
+div#ContainerDiv {
+  margin: -1px;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* EndCorePageCSS */
+
+.RTLText {
+  text-align: right;
+  font-size: 150%;
+  direction: rtl;
+  font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman",
+    var(--strFontFace);
+}
+
+.CentredRTLText {
+  text-align: center;
+  font-size: 150%;
+  direction: rtl;
+  font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman",
+    var(--strFontFace);
+}
+
+button p.RTLText {
+  text-align: center;
+}
+
+.RTLGapBox {
+  text-align: right;
+  font-size: 150%;
+  direction: rtl;
+  font-family: var(--strFontFace);
+}
+
+.GapBox {
+  height: 1.2rem;
+}
+
+.Guess {
+  font-weight: bold;
+}
+
+.CorrectAnswer {
+  font-weight: bold;
+}
+
+div#Timer {
+  padding: 0.25em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--strTitleColor);
+}
+
+span#TimerText {
+  padding: 0.25em;
+  border-width: 1px;
+  border-style: solid;
+  font-weight: bold;
+  display: none;
+  color: var(--strTitleColor);
+}
+
+span.Instructions {
+}
+
+.answerbox{
+  display: inline-block
+}
+
+#Instructions {
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+div.ExerciseText {
+}
+
+.FeedbackText,
+.FeedbackText span.CorrectAnswer,
+.FeedbackText span.Guess,
+.FeedbackText span.Answer {
+  color: var(--strTitleColor);
+}
+
+.LeftItem {
+  font-size: 1em;
+  color: var(--strTextColor);
+  text-align: left;
+}
+
+.RightItem {
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--strTextColor);
+  text-align: left;
+}
+
+span.CorrectMark {
+}
+
+input,
+textarea {
+  font-family: var(--strFontFace);
+  font-size: 120%;
+}
+
+select {
+  font-size: 1em;
+}
+
+div.Feedback {
+  background-color: var(--strPageBGColor);
+  left: 33%;
+  width: 34%;
+  top: 33%;
+  z-index: 1;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  text-align: center;
+  color: var(--strTitleColor);
+  position: absolute;
+  display: none;
+  font-size: 1em;
+}
+
+div.ExerciseDiv {
+  color: var(--strTextColor);
+}
+
+/* JMatch standard output table. */
+table.MatchTable {
+  margin: 2em auto;
+  border-width: 0;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable {
+  background-color: transparent;
+  color: var(--strTextColor);
+  border-color: var(--strTextColor);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  /*width: 90%;*/
+  position: relative;
+  text-align: center;
+  padding: 0px;
+}
+
+table.FlashcardTable tr {
+  border-style: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--strExBGColor);
+}
+
+table.FlashcardTable td.Showing {
+  font-size: 140%;
+  text-align: center;
+  width: 50%;
+  display: table-cell;
+  padding: 2em;
+  margin: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.5em;
+  color: var(--strTextColor);
+  box-shadow: 0.2em 0.3em 0.2em var(--strNavShadeColor);
+  background-color: var(--strPageBGColor);
+}
+
+table.FlashcardTable td.Hidden {
+  display: none;
+}
+
+/* JMix styles */
+div.JMixDrag,
+div.JMatchDrag {
+  padding: 0;
+  background-color: var(--strPageBGColor);
+  border-style: none;
+}
+
+div#GuessDiv {
+  padding: 0.5em;
+  margin-bottom: 2em;
+}
+
+div#SegmentDiv {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+a.ExSegment {
+  font-size: 120%;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--strTextColor);
+  display: inline-block;
+  padding: 0.5em;
+  border: solid 1pt gray;
+  margin-bottom: 0.5em;
+}
+
+span.RemainingWordList {
+  font-style: italic;
+}
+
+div.DropLine {
+  position: absolute;
+  text-align: left;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--strTitleColor);
+  width: 80%;
+  left: 10%;
+}
+
+/* JCloze styles */
+
+.ClozeWordList {
+  text-align: center;
+  font-weight: bold;
+}
+
+div.ClozeBody {
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  line-height: 2;
+}
+
+span.GapSpan {
+  font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid {
+  margin: auto auto 1em auto;
+  border-collapse: collapse;
+  padding: 0px;
+  background-color: #000000;
+}
+
+table.CrosswordGrid tbody tr td {
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 140%;
+  padding: 1px;
+  margin: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  color: #1d3557;
+}
+
+table.CrosswordGrid span {
+  color: #1d3557;
+}
+
+table.CrosswordGrid td.BlankCell {
+  background-color: #1d3557;
+  color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f1faee;
+  color: #000000;
+  font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell {
+  text-align: left;
+  vertical-align: top;
+  background-color: #a8dadc;
+  color: #000000;
+  padding: 1px;
+  font-weight: bold;
+}
+
+.NumLetterCellText {
+  cursor: pointer;
+  color: #000000;
+}
+
+.GridNum {
+  vertical-align: super;
+  font-size: 66%;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+.GridNum:hover,
+.GridNum:visited {
+  color: #000000;
+}
+
+table#Clues {
+  margin: auto;
+  vertical-align: top;
+}
+
+table#Clues td {
+  vertical-align: top;
+}
+
+table.ClueList {
+  margin: auto;
+}
+
+td.ClueNum {
+  text-align: right;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+td.Clue {
+  text-align: left;
+}
+
+div#ClueEntry {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad {
+  text-align: center;
+  display: none; /* initially hidden, shown if needed */
+  margin-bottom: 0.5em;
+}
+
+div.Keypad button {
+  font-family: var(--strFontFace);
+  font-size: 120%;
+  background-color: #ffffff;
+  color: #000000;
+  width: 2em;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.5em;
+  color: var(--strTextColor);
+  box-shadow: 0.2em 0.3em 0.2em var(--strTextColor);
+}
+
+/* JQuiz styles */
+
+div.QuestionNavigation {
+  text-align: center;
+}
+
+.QNum {
+  margin: 0em 1em 0.5em 1em;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+textarea {
+  font-family: var(--strFontFace);
+}
+
+.QuestionText {
+  text-align: left;
+  margin: 0px;
+  font-size: 1em;
+}
+
+.Answer {
+  font-size: 120%;
+}
+
+.PartialAnswer {
+  font-size: 120%;
+  letter-spacing: 0.1em;
+  color: var(--strTitleColor);
+}
+
+.Highlight {
+  color: #000000;
+  background-color: #ffff00;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+ol.QuizQuestions {
+  text-align: left;
+  list-style-type: none;
+}
+
+li.QuizQuestion {
+  padding: 1em;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+}
+
+ol.MCAnswers {
+  text-align: left;
+  list-style-type: upper-alpha;
+  padding: 1em;
+}
+
+ol.MCAnswers li {
+  margin-bottom: 1em;
+}
+
+ol.MSelAnswers {
+  text-align: left;
+  list-style-type: lower-alpha;
+  padding: 1em;
+}
+
+div.ShortAnswer {
+  padding: 1em;
+}
+
+.FuncButton {
+border-style: none;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  min-width: 3em;
+
+  border-left-color: var(--strFuncLightColor);
+  border-top-color: var(--strFuncLightColor);
+  border-right-color: var(--strFuncShadeColor);
+  border-bottom-color: var(--strFuncShadeColor);
+  color: #a8dadc;
+  background-color: #1d3557;
+  border-radius: 17px;
+  border-width: 1pt;
+  cursor: pointer;
+  box-shadow: 0.2em 0.3em 0.2em var(--strFuncShadeColor);
+}
+
+.FuncButton:active {
+  box-shadow: none;
+  border: none;
+}
+
+.FuncButton:hover {
+  background-color: #457b9d;
+  color: #f1faee;
+  transition: 0.5s;
+  border-color: #457b9d;
+}
+
+/*BeginNavBarStyle*/
+
+div.NavButtonBar {
+  text-align: center;
+  margin: 0.25rem 0;
+  clear: both;
+  font-size: 1em;
+  padding: 0.2em;
+  box-sizing: border-box;
+}
+
+.NavButton {
+  border-style: solid;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  min-width: 3em;
+
+  border-width: 1pt;
+  cursor: pointer;
+  box-shadow: 0.2em 0.3em 0.2em var(--strNavShadeColor);
+}
+
+.NavButton:active {
+  box-shadow: none;
+}
+
+.NavButton:hover {
+  color: var(--strNavBarColor);
+  background-color: var(--strNavTextColor);
+}
+
+/*EndNavBarStyle*/
+
+a {
+  color: var(--strLinkColor);
+  font-size: 1rem;
+}
+
+a:visited{
+	color: var(--strVLinkColor);
+}
+
+a:hover{
+	color: var(--strLinkColor);
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: var(--strFontFace);
+	font-size: 1em;
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 2em;
+	border-width: 1pt;
+	color: var(--strTextColor);
+	box-shadow: 0.2em 0.3em 0.2em var(--strTextColor);
+	background-color: var(--strExBGColor);
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+	touch-action: none;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+div.CardStyleCentered{
+	text-align: center;
+}
+
+.rtl{
+	text-align: right;
+	font-size: 140%;
+}
+
+.ClueNum{
+  display: none;
+}
+
+.zoom{
+  margin-left: 0.1rem;
+}
