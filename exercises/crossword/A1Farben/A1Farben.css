@@ -716,8 +716,14 @@ div.CardStyleCentered{
 	font-size: 140%;
 }
 
-.solution{
-display: flex;
-justify-content: center;
-padding-left: 2rem;
+.ClueNum{
+  display: none;
+}
+
+.zoom{
+  margin-left: 0.1rem;
+}
+
+.crossimg{
+    width: 10rem;
 }

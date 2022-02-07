@@ -7,6 +7,18 @@ body {
   
 }
 
+.blabla {
+  display: flex;
+  justify-content: center;
+ text-align: center;
+ font-weight: bolder;
+ color: #1d3557;
+}
+
+p{
+  color:#e63946
+}
+
 header {
  
   padding-top: 0.8rem;
