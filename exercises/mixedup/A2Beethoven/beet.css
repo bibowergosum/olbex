@@ -110,6 +110,7 @@ div.ReadingContainer {
   border-width: 1px 1px 1px 1px;
   border-color: var(--strTextColor);
   margin-bottom: 1px;
+  border-radius: 17px
 }
 
 div.ReadingContainer,
@@ -237,6 +238,8 @@ div.Feedback {
   position: absolute;
   display: none;
   font-size: 1rem;
+  border-radius: 17px;
+  box-shadow: 0.2em 0.3em 0.2em var(--strFuncShadeColor)
 }
 
 div.ExerciseDiv {
@@ -333,6 +336,7 @@ div.DropLine {
   border-bottom-color: #1d3557;
   width: 80%;
   left: 10%;
+  border-radius: 17px
 }
 
 /* JCloze styles */
@@ -638,6 +642,7 @@ div.CardStyle {
   touch-action: none;
   user-select: none;
   box-sizing: border-box;
+  border-radius: 17px
 }
 
 div.CardStyleCentered {

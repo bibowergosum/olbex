@@ -170,6 +170,7 @@ div.ReadingContainer {
   border-width: 1px 1px 1px 1px;
   border-color: var(--strTextColor);
   margin-bottom: 1px;
+  border-radius: 17px
 }
 
 div.ReadingContainer,
@@ -310,6 +311,8 @@ div.Feedback {
   position: absolute;
   display: none;
   font-size: 1em;
+  border-radius: 17px;
+  box-shadow: 0.2em 0.3em 0.2em var(--strFuncShadeColor)
 }
 
 div.ExerciseDiv {
@@ -722,4 +725,5 @@ div.CardStyleCentered{
 
 .zoom{
   margin-left: 0.1rem;
+  border-radius: 17px
 }
