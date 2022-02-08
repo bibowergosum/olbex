@@ -743,3 +743,11 @@ div.CardStyleCentered{
   background-color: #f1faee;
   min-width: 11rem;
 }
+
+input{
+  border-radius: 17px;
+}
+
+table.CrosswordGrid td.NumLetterCell:active{
+  background-color:#e63946
+}

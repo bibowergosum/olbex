@@ -478,6 +478,7 @@ table.CrosswordGrid td.NumLetterCell {
   font-weight: bold;
 }
 
+
 .NumLetterCellText {
   cursor: pointer;
   color: #000000;
@@ -738,4 +739,14 @@ div.CardStyleCentered{
   border-radius: 17px;
   background-color: #f1faee;
   min-width: 11rem;
+}
+
+input{
+  border-radius: 17px;
+  width: 30%;
+}
+
+
+table.CrosswordGrid td.NumLetterCell:active{
+  background-color:#e63946
 }
