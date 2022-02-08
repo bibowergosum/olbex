@@ -310,13 +310,13 @@ function ClearTextBoxes(){
 //JQUIZ CORE JAVASCRIPT CODE
 
 var CurrQNum = 0;
-var CorrectIndicator = 'Korrekt"';
+var CorrectIndicator = 'Richtig';
 var IncorrectIndicator = 'Leider falsch';
 var YourScoreIs = 'Dein Ergebnis liegt bei';
 
 //New for 6.2.2.0
-var CompletedSoFar = 'Questions completed so far: ';
-var ExerciseCompleted = 'You have completed the exercise.';
+var CompletedSoFar = 'Bisher beantwortete Fragen: ';
+var ExerciseCompleted = 'Die Übung ist beendet';
 var ShowCompletedSoFar = true;
 
 var ContinuousScoring = true;

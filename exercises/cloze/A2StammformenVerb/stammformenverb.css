@@ -39,7 +39,7 @@ h2 b:nth-child(3) {
   --strTitleColor: #1d3557;
 
   --strFuncLightColor: #f8fcf6;
-  --strFuncShadeColor: #787d77;
+  --strFuncShadeColor: #457B9D;
   --strLinkColor: #0000ff;
   --strVLinkColor: #1d3557;
 
@@ -181,7 +181,8 @@ div.ReadingContainer {
   border-width: 1px 1px 1px 1px;
   border-color: var(--strTextColor);
   margin-bottom: 1px;
-  border-radius: 17px
+  border-radius: 17px;
+  box-shadow: 0.2em 0.3em 0.2em var(--strFuncShadeColor)
 }
 
 div.ReadingContainer,
@@ -420,6 +421,8 @@ div.ClozeBody {
   margin-top: 2em;
   margin-bottom: 2em;
   line-height: 2;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 span.GapSpan {

@@ -110,7 +110,8 @@ div.StdDiv, div.ExerciseContainer, div.ReadingContainer{
 	border-width: 1px 1px 1px 1px;
 	border-color: var(--strTextColor);
 	margin-bottom: 1px;
-	border-radius: 17px
+	border-radius: 17px;
+    box-shadow: 0.2em 0.3em 0.2em var(--strFuncShadeColor)
 }
 
 div.ReadingContainer, div.ExerciseContainer{
@@ -235,7 +236,7 @@ div.Feedback {
 	display: none;
 	font-size: 1em;
 	border-radius: 17px;
-  box-shadow: 0.2em 0.3em 0.2em var(--strFuncShadeColor)
+    box-shadow: 0.2em 0.3em 0.2em var(--strFuncShadeColor)
 }
 
 
