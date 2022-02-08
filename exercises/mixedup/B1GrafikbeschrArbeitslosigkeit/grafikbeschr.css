@@ -548,8 +548,8 @@ div.ShortAnswer {
 }
 
 .FuncButton {
-  border-style: solid;
-  border-radius: 0.5em;
+  border-style: none;
+  
   padding: 0.5em;
   min-width: 3em;
   border-left-color: var(--strFuncLightColor);
@@ -588,7 +588,7 @@ div.NavButtonBar {
 }
 
 .NavButton {
-  border-style: none;
+  border-style: solid;
   border-radius: 0.5em;
   padding: 0.5em;
   min-width: 3em;
@@ -692,10 +692,6 @@ img.zoom:hover {
   justify-content: space-evenly;
 }
 
-input {
-  margin: 0.4rem;
-}
-
 title {
   background-color: aqua;
 }
@@ -759,3 +755,13 @@ title {
   }
 }
 /* ============ small devices .end// ============ */
+.suche {
+  width: 6rem
+
+}
+
+.form-control {
+  border-radius: 17px;
+  background-color: #f1faee;
+  min-width: 11rem;
+}

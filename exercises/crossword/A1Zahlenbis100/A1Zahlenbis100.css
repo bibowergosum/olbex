@@ -719,3 +719,14 @@ div.CardStyleCentered{
 	text-align: right;
 	font-size: 140%;
 }
+
+.suche {
+  width: 6rem
+
+}
+
+.form-control {
+  border-radius: 17px;
+  background-color: #f1faee;
+  min-width: 11rem;
+}

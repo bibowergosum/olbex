@@ -616,7 +616,7 @@ div.ShortAnswer {
 
 .FuncButton {
   border-style: none;
-  border-radius: 0.5em;
+  
   padding: 0.5em;
   min-width: 3em;
 
@@ -738,4 +738,15 @@ div.CardStyleCentered {
 
 img {
   border-radius: 17px;
+}
+
+.suche {
+  width: 6rem
+
+}
+
+.form-control {
+  border-radius: 17px;
+  background-color: #f1faee;
+  min-width: 11rem;
 }

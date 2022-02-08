@@ -51,60 +51,36 @@ h2 b:nth-child(3) {
   color: #e63946;
 }
 
-.card {
-  display: flex;
-  text-align: center;
-  border-radius: 17px;
-  border: none;
-  background-color: #a8dadc;
-}
+.FuncButton {
+border-style: none;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  min-width: 3em;
 
-.card-body {
-  background-color: #a8dadc;
-  border-radius: 17px;
-}
-
-.card-text {
-  display: flex;
-  text-align: center;
-  color: #1d3557;
-  font-weight: bolder;
-}
-
-.btn-primary,
-.btn {
-  display: flex;
-  justify-content: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-color: #1d3557;
+  border-left-color: var(--strFuncLightColor);
+  border-top-color: var(--strFuncLightColor);
+  border-right-color: var(--strFuncShadeColor);
+  border-bottom-color: var(--strFuncShadeColor);
   color: #a8dadc;
+  background-color: #1d3557;
   border-radius: 17px;
-  border-color: #1d3557;
+  border-width: 1pt;
+  cursor: pointer;
+  box-shadow: 0.2em 0.3em 0.2em var(--strFuncShadeColor);
 }
 
-.btn:hover {
+.FuncButton:active {
+  box-shadow: none;
+  border: none;
+}
+
+.FuncButton:hover {
   background-color: #457b9d;
   color: #f1faee;
   transition: 0.5s;
+  border-color: #457b9d;
 }
 
-.btn:active {
-  background-color: #1d3557;
-  border-color: #1d3557;
-}
-
-.btn-primary:focus {
-  background-color: #1d3557;
-  color: #457b9d;
-  border-color: #1d3557;
-}
-
-.card-img-top {
-  border-radius: 17px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
 
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
@@ -165,3 +141,13 @@ h2 b:nth-child(3) {
   }
 }
 /* ============ small devices .end// ============ */
+.suche {
+  width: 6rem
+
+}
+
+.form-control {
+  border-radius: 17px;
+  background-color: #f1faee;
+  min-width: 11rem;
+}

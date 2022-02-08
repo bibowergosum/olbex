@@ -734,3 +734,14 @@ p {
   }
 }
 /* ============ small devices .end// ============ */
+
+.suche {
+  width: 6rem
+
+}
+
+.form-control {
+  border-radius: 17px;
+  background-color: #f1faee;
+  min-width: 11rem;
+}
